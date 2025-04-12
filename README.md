@@ -20,7 +20,7 @@
 ## 🚀 Установка и запуск проекта
 
 ```bash
-git clone https://github.com/yourusername/schedule-bmstu.git
+git clone https://github.com/Vdem07/schedule-bmstu.git
 cd schedule-bmstu
 npm install
 npx expo start
