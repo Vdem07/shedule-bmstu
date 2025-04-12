@@ -55,9 +55,14 @@ npx eas build --platform android --profile preview
 
 ## 📷 Скриншоты
 
-![Screenshot_20250412_162547_Schedule BMSTU](https://github.com/user-attachments/assets/4e4087ee-9d43-4c08-b52c-1e8d0eee838b) ![Screenshot_20250412_162555_Schedule BMSTU](https://github.com/user-attachments/assets/9c423ff8-3ed6-4f57-9c17-ef4811de620f)
-![Screenshot_20250412_162645_Schedule BMSTU](https://github.com/user-attachments/assets/d2a44585-3646-4110-acad-290685ce8343) ![Screenshot_20250412_162737_Schedule BMSTU](https://github.com/user-attachments/assets/04354445-28b8-4879-ad84-766242d4abf9)
-![Screenshot_20250412_162746_Schedule BMSTU](https://github.com/user-attachments/assets/e7f055eb-e039-4642-94ee-3f048c37c20e)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4e4087ee-9d43-4c08-b52c-1e8d0eee838b" width="300" />
+  <img src="https://github.com/user-attachments/assets/9c423ff8-3ed6-4f57-9c17-ef4811de620f" width="300" />
+  <img src="https://github.com/user-attachments/assets/d2a44585-3646-4110-acad-290685ce8343" width="300" />
+  <img src="https://github.com/user-attachments/assets/04354445-28b8-4879-ad84-766242d4abf9" width="300" />
+  <img src="https://github.com/user-attachments/assets/e7f055eb-e039-4642-94ee-3f048c37c20e" width="300" />
+</p>
+
 
 ## 🛠️ Используемые библиотеки
 
