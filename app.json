@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "schedule-app",
+    "name": "Schedule BMSTU",
     "slug": "schedule-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/icon_1024x1024.png",
+    "scheme": "schedule-bmstu",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,21 +13,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon_1024x1024.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.vadim23dem.schedulebmstu"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon_1024x1024.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/icon_1024x1024.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -36,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d8cb37df-9013-48e5-aefa-2d37ec771f61"
+      }
     }
   }
 }
