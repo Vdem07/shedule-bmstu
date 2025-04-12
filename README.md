@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 📘 Schedule BMSTU
 
-## Get started
+Удобное мобильное приложение для просмотра расписания занятий студентов КФ МГТУ им. Н. Э. Баумана. Приложению достаточно один раз загрузить Excel-файл с расписанием, который выкладывают на официальном сайте КФ МГТУ им. Н.Э. Баумана — оно автоматически сохранит всё содержимое локально и запомнит выбранный курс и группу. При следующем запуске и использовании всё будет доступно без повторной загрузки.
 
-1. Install dependencies
+## 🔧 Возможности
 
-   ```bash
-   npm install
-   ```
+- 📂 Загрузка Excel-файла расписания (`.xlsx`)
+- 📚 Выбор курса и группы (запоминается)
+- 🗓️ Фильтрация по дню недели
+- 💾 Автоматическое сохранение последнего выбора и расписания
+- 📱 Современный, адаптивный интерфейс
+- 📦 Локальное хранение данных через `AsyncStorage`
 
-2. Start the app
+## 📋 Системные требования
 
-   ```bash
-    npx expo start
-   ```
+- 📱 **Android**: версия **8.0 (Oreo)** или выше  
+- 📁 Excel-файл расписания должен быть в формате `.xlsx`
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 🚀 Установка и запуск проекта
 
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/schedule-bmstu.git
+cd schedule-bmstu
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📥 Установка APK
 
-## Learn more
+Скачать последнюю версию приложения в виде `.apk` можно прямо из [раздела релизов](https://github.com/Vdem07/shedule-bmstu/releases) репозитория.
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Перейти по ссылке: [Releases](https://github.com/Vdem07/shedule-bmstu/releases)
+2. Выбрать последний релиз
+3. Скачать файл с расширением `.apk`
+4. Установить его на Android-устройство (может потребоваться включить установку из неизвестных источников)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> 🛠 Если требуется собрать APK самостоятельно:
 
-## Join the community
+```bash
+npx expo install eas-cli
+npx eas build --platform android --profile preview
+```
 
-Join our community of developers creating universal apps.
+> ⚠️ **Важно:** локальная сборка возможна только на **macOS** или **Linux**.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📁 Формат Excel-файла
+
+Типовой формат расписания, которое составляет администрация КФ МГТУ:
+- листы — это курсы
+- Первая колонка — день недели
+- Вторая колонка — время занятия
+- Остальные колонки — названия групп
+- Пары по числителю/знаменателю должны быть в одной ячейке, разделённой **переносом строки** (`Alt + Enter` в Excel)
+
+## 📷 Скриншоты
+
+![Screenshot_20250412_162547_Schedule BMSTU](https://github.com/user-attachments/assets/4e4087ee-9d43-4c08-b52c-1e8d0eee838b) ![Screenshot_20250412_162555_Schedule BMSTU](https://github.com/user-attachments/assets/9c423ff8-3ed6-4f57-9c17-ef4811de620f)
+![Screenshot_20250412_162645_Schedule BMSTU](https://github.com/user-attachments/assets/d2a44585-3646-4110-acad-290685ce8343) ![Screenshot_20250412_162737_Schedule BMSTU](https://github.com/user-attachments/assets/04354445-28b8-4879-ad84-766242d4abf9)
+![Screenshot_20250412_162746_Schedule BMSTU](https://github.com/user-attachments/assets/e7f055eb-e039-4642-94ee-3f048c37c20e)
+
+## 🛠️ Используемые библиотеки
+
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [XLSX](https://www.npmjs.com/package/xlsx)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
+- [@react-native-picker/picker](https://github.com/react-native-picker/picker)
+
+## 📄 Лицензия
+
+[MIT](LICENSE)
